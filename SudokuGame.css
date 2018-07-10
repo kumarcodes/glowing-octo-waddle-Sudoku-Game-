@@ -1,0 +1,160 @@
+  * {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+  }
+  
+  body {
+    background-color: #DC143C;
+  }
+  
+  .container {
+    background-color: #228B22;
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  #title {
+    color: #B3F25C;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+  }
+  
+  .GameOptions,
+  button,
+  .InitialFilledButton,
+  .ModalWindow {
+    background-color: #B3F25C;
+  }
+  
+  #title,
+  .GameOptions,
+  .GameOptions button,
+  .ModalWindow,
+  .ModalButton,
+  .footer {
+    font-family: Raleway;
+  }
+  
+  button,
+  .EmptyButton,
+  .InitialFilledButton,
+  .CellSelected,
+  .CellIncorrect,
+  .ModalWindow {
+    color: #FFFFFF;
+  }
+  
+  a,
+  .NumberSelected,
+  .ModalButton {
+    background-color: #FFFFFF;
+    color: #B3F25C;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 25px 10px;
+    font-size: 14px;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .BoardArea {
+    overflow: auto;
+  }
+  
+  .BoardArea,
+  .GameOptions button:hover {
+    background-color: #DCFFA5;
+  }
+  
+  .SudokuBoard {
+    height: 386px;
+    width: 386px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  
+  a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DCFFA5;
+    line-height: 40px;
+  }
+  
+  .InitialFilledButton {
+    cursor: default;
+  }
+  
+  .CellSelected,
+  .CellIncorrect {
+    background-color: #FFA091;
+  }
+  
+  .EmptyButton.CellSelected {
+    color: #8B0000;
+  }
+  
+  .CellIncorrect.CellSelected {
+    background-color: #8B0000;
+  }
+  
+  .NumberArea {
+    padding: 20px 0px 20px;
+  }
+  
+  .NumberButton {
+    border-radius: 50%;
+    padding: 10px 14px 10px;
+  }
+  
+  .ModalWindow {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 1;
+    border-style: solid;
+    border-color: #191970;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -65px;
+    position: fixed;
+    width: 300px;
+    height: 130px;
+  }
+  
+  .ModalButton {
+    font-weight: 900;
+    margin: 0px 20px 0px;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    font-size: 14px;
+    color: #589D37;
+    text-align: center;
+  }

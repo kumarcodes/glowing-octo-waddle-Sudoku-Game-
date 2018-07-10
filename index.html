@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!-- JavaScript and JQuery sources -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="SudokuGame.js"></script>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" type="text/css" href="SudokuGame.css">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Title and menu bar-->
+      <div class="SudokuBanner">
+        <div id="title">Sudoku</div>
+
+        <div class="GameOptions">
+          <button id="newGame">New Game</button>
+          <button id="hint">Hint</button>
+          <button id="check">Check</button>
+          <button id="solve">Solve</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+
+      <!-- 9x9 Sudoku board and buttons for number selection-->
+      <div class="BoardArea">
+
+        <!-- 81 Sudoku cells to be generated in SudokuGame.js -->
+        <div class="SudokuBoard"></div>
+
+        <!-- Buttons for number selection, x to remove input -->
+        <div class="NumberArea">
+          <button class="NumberButton" id="button1">1</button>
+          <button class="NumberButton" id="button2">2</button>
+          <button class="NumberButton" id="button3">3</button>
+          <button class="NumberButton" id="button4">4</button>
+          <button class="NumberButton" id="button5">5</button>
+          <button class="NumberButton" id="button6">6</button>
+          <button class="NumberButton" id="button7">7</button>
+          <button class="NumberButton" id="button8">8</button>
+          <button class="NumberButton" id="button9">9</button>
+          <button class="NumberButton" id="button0">x</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="ModalWindow">
+      <p class="ModalText">Congratulations, board solved!
+        <br>Start a new game?</p>
+      <button class="ModalButton" id="modalNewGame">Yes</button>
+      <button class="ModalButton" id="modalNoNewGame">No</button>
+    </div>
+
+    <div class="footer">ROHIT KUMAR SHARMA, 2018</div>
+  </body>
+
+</html>
